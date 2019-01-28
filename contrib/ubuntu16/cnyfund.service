@@ -1,0 +1,33 @@
+# /etc/systemd/system/cnyfund.service
+# /usr/bin/
+# sudo systemctl enable cnyfund
+# sudo systemctl start cnyfund 
+# sudo systemctl status cnyfund 
+# TODO, add pid file to track.
+
+[Unit]
+Description=CnyFund daemon
+After=network.target 
+#Conflicts=cnyfund-tor@%i.service 
+Conflicts=cnyfund-tor.service
+
+[Service]
+#User=%i 
+#Group=users 
+User=ubuntu
+Group=ubuntu
+Type=forking
+Restart=always
+RestartSec=15
+ExecStart=/usr/bin/cnyfund -daemon -datadir=/home/ubuntu/.cnyfund -conf=/home/ubuntu/.cnyfund/cnyfund.conf
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+
+## security
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=full
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=CnyFund
+Comment=CnyFund P2P Cryptocurrency
+Comment[fr]=CnyFund, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CnyFund, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/cnyfund-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/cnyfund;
+Categories=Office;

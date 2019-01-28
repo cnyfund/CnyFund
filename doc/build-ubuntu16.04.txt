@@ -1,0 +1,32 @@
+sudo apt-get update
+
+// For console app
+sudo apt-get -y install git build-essential libssl-dev libdb++-dev libboost-all-dev libqrencode-dev libminiupnpc-dev 
+
+// For Qt wallet
+apt-get install qt5-default qt5-qmake qtbase5-dev-tools qttools5-dev-tools \
+        build-essential libboost-dev libboost-system-dev \
+        libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev \
+        libssl-dev libdb++-dev libminiupnpc-dev
+
+// Build console app
+cd src/
+make -f makefile.unix
+strip cnyfund
+
+Notes:
+
+ cd ${CNYFUND_DIR}/src
+ make -f makefile.unix USE_UPNP=
+ strip cnyfund
+
+The release is built with GCC and then "strip cnyfund" to strip the debug
+symbols, which reduces the executable size by about 90%.
+
+// Build wallet
+cd ${CNYFUND_DIR}
+qmake
+make
+
+// Run process
+run ./cnyfund -datadir=../../qb &

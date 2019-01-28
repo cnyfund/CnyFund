@@ -1,0 +1,9 @@
+Building CnyFund
+
+See doc/readme-qt.rst for instructions on building CnyFund QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of CnyFund.
+
+See doc/build-*.txt for instructions on building cnyfund,
+the intended-for-services, no-graphical-interface, reference
+implementation of CnyFund.
