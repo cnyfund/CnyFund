@@ -93,27 +93,29 @@ public:
         vSeeds.push_back(CDNSSeedData("1.youmebank.com:18188","1.youmebank.com:18188"));
         vSeeds.push_back(CDNSSeedData("2.youmebank.com:18188","2.youmebank.com:18188"));
         vSeeds.push_back(CDNSSeedData("3.youmebank.com:18188","3.youmebank.com:18188"));
-        vSeeds.push_back(CDNSSeedData("4.youmebank.com:18188","4.youmebank.com:18188"));
-        vSeeds.push_back(CDNSSeedData("5.youmebank.com:18188","5.youmebank.com:18188"));
-        vSeeds.push_back(CDNSSeedData("6.youmebank.com:18188","6.youmebank.com:18188"));
         vSeeds.push_back(CDNSSeedData("1.youmebank.com","1.youmebank.com"));
         vSeeds.push_back(CDNSSeedData("2.youmebank.com","2.youmebank.com"));
         vSeeds.push_back(CDNSSeedData("3.youmebank.com","3.youmebank.com"));
-        vSeeds.push_back(CDNSSeedData("4.youmebank.com","4.youmebank.com"));
-        vSeeds.push_back(CDNSSeedData("5.youmebank.com","5.youmebank.com"));
-        vSeeds.push_back(CDNSSeedData("6.youmebank.com","6.youmebank.com"));
         vSeeds.push_back(CDNSSeedData("",""));
 
         vSeeds.push_back(CDNSSeedData("103.45.29.134", "103.45.29.1343"));
         vSeeds.push_back(CDNSSeedData("103.45.29.134:18188","103.45.29.134:18188"));
         vSeeds.push_back(CDNSSeedData("103.45.15.140","103.45.15.140"));
         vSeeds.push_back(CDNSSeedData("103.45.15.140:18188","103.45.15.140:18188"));
-        vSeeds.push_back(CDNSSeedData("182.18.21.43","182.18.21.43"));
-        vSeeds.push_back(CDNSSeedData("182.18.21.43:18188","182.18.21.43:18188"));
-        vSeeds.push_back(CDNSSeedData("103.45.107.197","103.45.107.197"));
-        vSeeds.push_back(CDNSSeedData("103.45.107.197:18188","103.45.107.197:18188"));
         vSeeds.push_back(CDNSSeedData("103.45.130.54","103.45.130.54"));
         vSeeds.push_back(CDNSSeedData("103.45.130.54:18188","103.45.130.54:18188"));
+        vSeeds.push_back(CDNSSeedData("103.45.107.197","103.45.107.197"));
+        vSeeds.push_back(CDNSSeedData("103.45.107.197:18188","103.45.107.197:18188"));
+        vSeeds.push_back(CDNSSeedData("43.226.147.219","43.226.147.219"));
+        vSeeds.push_back(CDNSSeedData("43.226.147.219:18188","43.226.147.219:18188"));
+        vSeeds.push_back(CDNSSeedData("34.219.113.24", "34.219.113.24"));
+        vSeeds.push_back(CDNSSeedData("34.219.113.24:18188", "34.219.113.24:18188"));
+        vSeeds.push_back(CDNSSeedData("34.221.6.62", "34.221.6.62"));
+        vSeeds.push_back(CDNSSeedData("34.221.6.62:18188", "34.221.6.62:18188"));
+        vSeeds.push_back(CDNSSeedData("50.112.238.35", "50.112.238.35"));
+        vSeeds.push_back(CDNSSeedData("50.112.238.35:18188", "50.112.238.35:18188"));
+        vSeeds.push_back(CDNSSeedData("54.70.85.148", "54.70.85.148"));
+        vSeeds.push_back(CDNSSeedData("54.70.85.148:18188", "54.70.85.148:18188"));
         vSeeds.push_back(CDNSSeedData("",""));
 
         // https://en.bitcoin.it/wiki/List_of_address_prefixes, make public address always start as character 'C'. 
