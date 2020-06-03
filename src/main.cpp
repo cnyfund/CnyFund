@@ -999,6 +999,11 @@ int64_t GetProofOfStakeReward(const CBlockIndex* pindexPrev, int64_t nCoinAge, i
     // else
     //     nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
 
+    if (IsProtocolV4(pindexPrev->nTime)) {
+        // start from ProtocolV4, pos reward change to 1 CENT;
+        nSubsidy = 1 * CENT;
+    }
+
     // int64_t nTotal = nSubsidy + nFees + 0.01*COIN; // 0.01 for pos reward 
     int64_t nTotal = nFees + nSubsidy;  
 

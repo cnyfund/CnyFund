@@ -61,6 +61,7 @@ static const int64_t COIN_YEAR_REWARD = 0 * CENT; // 0% per year
 inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight >1 ; }//38423
 inline bool IsProtocolV2(int nHeight) { return TestNet() || nHeight > 36; }//319000
 inline bool IsProtocolV3(int64_t nTime) { return TestNet() || nTime > 1491458766; }
+inline bool IsProtocolV4(int64_t nTime) { return TestNet() || nTime > 1593561600; } // Wednesday, July 1, 2020 12:00:00 AM GMT
 
 inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60; }
 inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 15; }
